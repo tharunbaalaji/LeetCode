@@ -24,6 +24,8 @@ public class Solution {
                 break;
             }
         }
+        if(found==true)
+        {
         slow=head;
         
         while(fast!=slow)
@@ -32,11 +34,12 @@ public class Solution {
             slow=slow.next;
             
         }
-        if(found==false)
-        {
-            return null;
+          return fast;
         }
-        return fast;
+        
+            return null;
+        
+      
         
         
     }
