@@ -4,6 +4,16 @@ class Solution {
         {
             return 0;
         }
+        if(needle.length()==1)
+        {
+            for(int i=0;i<haystack.length();i++)
+            {
+                if(needle.equals(haystack.charAt(i)))
+                {
+                    return i;
+                }
+            }
+        }
         
           for(int i=0;i<haystack.length()-needle.length();i++)
           {
