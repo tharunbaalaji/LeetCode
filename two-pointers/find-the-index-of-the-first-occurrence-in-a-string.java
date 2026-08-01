@@ -1,6 +1,6 @@
 class Solution {
     public int strStr(String haystack, String needle) {
-        if(haystack.length()==1)
+        if(needle.length()==0)
         {
             return 0;
         }
@@ -12,7 +12,9 @@ class Solution {
                 {
                     return i;
                 }
+                
             }
+            return -1;
         }
         
           for(int i=0;i<haystack.length()-needle.length();i++)
