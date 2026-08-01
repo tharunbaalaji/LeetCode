@@ -8,7 +8,7 @@ class Solution {
         {
             for(int i=0;i<haystack.length();i++)
             {
-                if(needle.equals(haystack.charAt(i)))
+                if(needle.charAt(0).equals(haystack.charAt(i)))
                 {
                     return i;
                 }
