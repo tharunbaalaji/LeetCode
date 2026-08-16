@@ -2,7 +2,7 @@ class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Set<List<Integer>>set=new HashSet<>();
         Arrays.sort(nums);
-        int sum=0;
+        long sum=0;
         for(int i=0;i<nums.length-3;i++)
         {
             for(int j=i+1;j<nums.length-2;j++ )
@@ -11,7 +11,7 @@ class Solution {
                 int right=nums.length-1;
                 while(left<right)
                 {
-                    sum=nums[i]+nums[j]+nums[left]+nums[right];
+                    sum=(long)nums[i]+nums[j]+nums[left]+nums[right];
                     if(sum==target)
                     {
                         set.add(Arrays.asList(nums[i],nums[j],nums[left],nums[right]));
