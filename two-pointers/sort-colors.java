@@ -11,7 +11,7 @@ class Solution {
                 nums[left]=nums[mid];
                 nums[mid]=temp;
                 left++;
-                
+                mid++;
             }
             else if(nums[mid]==1)
             {
