@@ -2,11 +2,7 @@ class Solution {
     int size;
     int top=-1;
     char[]stack;
-    Solution()
-    {
-        size=100;
-        stack=new char[size];
-    }
+   
     void push(char a)
     {
         if(top==size-1)
@@ -32,6 +28,8 @@ class Solution {
         return false;
     }
     public boolean isValid(String s) {
+        size=s.length();
+        stack=new char[size];
 
           for(char c:s.toCharArray())
           {
