@@ -41,6 +41,10 @@ class Solution {
              }
              else if(c=='}'||c==']'||c==')')
              {
+                if(isEmpty())
+                {
+                    return false;
+                }
                 char temp=pop();
                 if((temp=='{'&&c!='}')||(temp=='['&&c!=']')||(temp=='('&&c!=')'))
                 {
